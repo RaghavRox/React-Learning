@@ -5,17 +5,45 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
-function Nadi(props){
-  return <h1> {props.needi}</h1>;
+class Wa extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {number : null};
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+
+  }
+
+  
+
+  handleSubmit(event){
+    window.location.href = "https://wa.me/91"+this.state.number;
+    event.preventDefault();
+  } 
+
+  handleChange(event){
+    this.setState({number : event.target.value});
+  }
+
+  render(){
+    return (
+      <form onSubmit = {this.handleSubmit}>
+          <label>
+            number : <input type ="text" value = {this.state.number} onChange = {this.handleChange}/>
+          </label>
+          <input type = "submit" value = "chat in whatsapp"/>
+      </form>
+    );
+  }
 }
 
-const element = <Nadi needi = "wtf"/>;
 
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
-  element,
+  <Wa />,
   document.getElementById('root')
 );
 
