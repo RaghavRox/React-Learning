@@ -79,7 +79,7 @@ class MyVideo extends React.Component{
   async startStream(){
     localStream = await navigator.mediaDevices.getUserMedia({
       video : true,
-      audio : true
+      audio : false
     });
     localStream.getTracks().forEach((track) => {
       pc.addTrack(track, localStream);
