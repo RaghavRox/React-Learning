@@ -42,13 +42,7 @@ import './index.css';
 
 //Global variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBTp6wE7s53_l8p_NlK85MawnVkaE-Nskw",
-  authDomain: "react-learning-b601c.firebaseapp.com",
-  projectId: "react-learning-b601c",
-  storageBucket: "react-learning-b601c.appspot.com",
-  messagingSenderId: "204682177164",
-  appId: "1:204682177164:web:feef8528c6d49558ef29a9",
-  measurementId: "G-N7KP9MCCZ7"
+  //i will not show
 };
 const servers = {
   iceServers: [
@@ -79,12 +73,16 @@ class MyVideo extends React.Component{
   async startStream(){
     localStream = await navigator.mediaDevices.getUserMedia({
       video : true,
-      audio : false
+      audio : true
     });
     localStream.getTracks().forEach((track) => {
       pc.addTrack(track, localStream);
     });
-    this.vidRef.current.srcObject = localStream;
+    let displayLocalStream = await navigator.mediaDevices.getUserMedia({
+      video : true,
+      audio : false
+    });
+    this.vidRef.current.srcObject = displayLocalStream;
     this.vidRef.current.play();
   }
 
