@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Learning/static/css/main.7d028fb9.chunk.css",
+    "main.css": "/React-Learning/static/css/main.173c6a76.chunk.css",
     "main.js": "/React-Learning/static/js/main.4fca861d.chunk.js",
     "main.js.map": "/React-Learning/static/js/main.4fca861d.chunk.js.map",
     "runtime-main.js": "/React-Learning/static/js/runtime-main.87534841.js",
@@ -8,13 +8,13 @@
     "static/js/2.97476d43.chunk.js": "/React-Learning/static/js/2.97476d43.chunk.js",
     "static/js/2.97476d43.chunk.js.map": "/React-Learning/static/js/2.97476d43.chunk.js.map",
     "index.html": "/React-Learning/index.html",
-    "static/css/main.7d028fb9.chunk.css.map": "/React-Learning/static/css/main.7d028fb9.chunk.css.map",
+    "static/css/main.173c6a76.chunk.css.map": "/React-Learning/static/css/main.173c6a76.chunk.css.map",
     "static/js/2.97476d43.chunk.js.LICENSE.txt": "/React-Learning/static/js/2.97476d43.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.87534841.js",
     "static/js/2.97476d43.chunk.js",
-    "static/css/main.7d028fb9.chunk.css",
+    "static/css/main.173c6a76.chunk.css",
     "static/js/main.4fca861d.chunk.js"
   ]
 }
